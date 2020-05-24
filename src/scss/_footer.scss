@@ -1,0 +1,15 @@
+footer.footer {
+  min-height: 48px;
+  .logo {
+    img {
+      width: auto;
+      height: $footer-logo-height;
+    }
+  }
+}
+
+@include mobile {
+  .footer-copyright {
+    text-align: center;
+  }
+}
