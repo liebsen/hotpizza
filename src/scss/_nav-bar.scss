@@ -6,6 +6,7 @@ nav.navbar {
 
   .navbar-brand {
     .logo {
+      min-width: 5rem;
       img {
         margin-top: 0.35rem;
         height: $header-logo-height-mobile;

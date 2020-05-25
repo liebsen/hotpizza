@@ -19,29 +19,29 @@
             <img :src="props.row.avatar" :alt="props.row.name" class="is-rounded">
           </div>
         </b-table-column>
-        <b-table-column label="Name" field="name" sortable>
+        <b-table-column label="Nombre" field="name" sortable>
           {{ props.row.name }}
         </b-table-column>
-        <b-table-column label="Company" field="company" sortable>
+        <b-table-column label="Comercio" field="company" sortable>
           {{ props.row.company }}
         </b-table-column>
-        <b-table-column label="City" field="city" sortable>
+        <b-table-column label="Ubicación" field="city" sortable>
           {{ props.row.city }}
         </b-table-column>
         <b-table-column class="is-progress-col" label="Progress" field="progress" sortable>
           <progress class="progress is-small is-primary" :value="props.row.progress" max="100">{{ props.row.progress }}</progress>
         </b-table-column>
-        <b-table-column label="Created">
-          <small class="has-text-grey is-abbr-like" :title="props.row.created">{{ props.row.created }}</small>
+        <b-table-column label="Precio">
+          <small class="has-text-grey is-abbr-like" :title="props.row.created">{{ props.row.price }} ARS</small>
         </b-table-column>
         <b-table-column custom-key="actions" class="is-actions-cell">
           <div class="buttons is-right">
-            <router-link :to="{name:'client.edit', params: {id: props.row.id}}" class="button is-small is-primary">
-              <b-icon icon="account-edit" size="is-small"/>
+            <router-link :to="{name:'client.edit', params: {id: props.row.id}}" class="button is-medium is-success is-rounded is-outlined">
+              <b-icon icon="cart-arrow-down" size="is-medium"/>
             </router-link>
-            <button class="button is-small is-danger" type="button" @click.prevent="trashModal(props.row)">
+            <!--button class="button is-small is-danger" type="button" @click.prevent="trashModal(props.row)">
               <b-icon icon="trash-can" size="is-small"/>
-            </button>
+            </button-->
           </div>
         </b-table-column>
       </template>

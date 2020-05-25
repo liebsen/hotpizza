@@ -2,7 +2,7 @@
   <div class="is-landing">
     <div class="columns is-vcentered has-text-centered">
       <div class="column">
-        <router-link to="/Ofertas" class="button is-white is-outlined is-rounded is-large">
+        <router-link to="/ofertas" class="button is-white is-outlined is-rounded is-large">
           <span>Ofertas</span>
         </router-link>
         <router-link to="/promos" class="button is-white is-outlined is-rounded is-large">
@@ -20,12 +20,6 @@ export default {
   data () {
     return {
     }
-  },
-  mounted () {
-    this.$buefy.snackbar.open({
-      message: 'Welcome back',
-      queue: false
-    })
   }
 }
 </script>
