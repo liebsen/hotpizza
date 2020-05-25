@@ -28,11 +28,11 @@ const routes = [
   },
   {
     meta: {
-      title: 'Productos'
+      title: 'Promos'
     },
-    path: '/productos',
-    name: 'productos',
-    component: () => import(/* webpackChunkName: "forms" */ '../views/Productos.vue')
+    path: '/promos',
+    name: 'promos',
+    component: () => import(/* webpackChunkName: "forms" */ '../views/Promos.vue')
   },
   {
     meta: {
@@ -44,11 +44,11 @@ const routes = [
   },
   {
     meta: {
-      title: 'Profile'
+      title: 'Lo que mas sale'
     },
-    path: '/profile',
-    name: 'profile',
-    component: () => import(/* webpackChunkName: "profile" */ '../views/Profile.vue')
+    path: '/lo-que-mas-sale',
+    name: 'loquemassale',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/LoQueMasSale.vue')
   },
   {
     meta: {

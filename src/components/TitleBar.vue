@@ -13,9 +13,9 @@
       <div class="level-right">
         <div class="level-item">
           <div class="buttons is-right">
-            <router-link to="/ofertas" class="button is-primary">
+            <router-link to="/promos" class="button is-primary">
               <b-icon icon="star" custom-size="default"/>
-              <span>Ofertas</span>
+              <span>Promos</span>
             </router-link>
           </div>
         </div>

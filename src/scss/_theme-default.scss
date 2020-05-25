@@ -8,6 +8,7 @@ $default-padding: $size-base * 1.5;
 /* Default font */
 $family-sans-serif: "Dosis", sans-serif;
 
+$body-size: 18px;
 /* Base color */
 $base-color: #2e323a;
 $base-color-light: rgba(24,28,33,0.06);
@@ -93,11 +94,14 @@ $footer-background-color: $white;
 $footer-padding: $default-padding * .33 $default-padding;
 
 /* Footer: specifics */
+$header-logo-height-mobile: $size-base * 3;
 $header-logo-height: $size-base * 4;
 $footer-logo-height: $size-base * 2;
 
 /* Progress: Bulma override */
 $progress-bar-background-color: $grey-lighter;
+
+$navbar-height: 3.75rem;
 
 /* Icon: specifics */
 $icon-update-mark-size: $size-base * .5;

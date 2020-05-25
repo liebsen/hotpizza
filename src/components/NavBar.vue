@@ -1,12 +1,10 @@
 <template>
   <nav v-show="isNavBarVisible" id="navbar-main" class="navbar is-fixed-top">
     <div class="navbar-brand">
-      <div class="navbar-item">
-        <div>
-          <router-link to="/">
-            <img src="../assets/hplogo-icon.png" alt="HotPizza.me"/>
-          </router-link>
-        </div>
+      <div class="logo">
+        <router-link to="/">
+          <img src="../assets/hplogo-icon.png" alt="HotPizza.me"/>
+        </router-link>
       </div>
       <div class="navbar-item">
         <div class="control">
@@ -16,7 +14,7 @@
     </div>
     <div class="navbar-brand is-right">
       <a class="navbar-item navbar-item-menu-toggle is-hidden-desktop" @click.prevent="menuNavBarToggle">
-        <b-icon :icon="menuNavBarToggleIcon" custom-size="default"/>
+        <b-icon :icon="menuNavBarToggleIcon" size="is-medium"/>
       </a>
     </div>
     <div class="navbar-menu fadeIn animated faster" :class="{'is-active':isMenuNavBarActive}">
@@ -25,11 +23,11 @@
           <b-icon icon="menu" custom-size="default"/>
           <span>Menu</span>
           <div slot="dropdown" class="navbar-dropdown is-right">
-            <router-link to="/productos" class="navbar-item" exact-active-class="is-active">
+            <router-link to="/promos" class="navbar-item" exact-active-class="is-active">
               <b-icon icon="account" custom-size="default"/>
-              <span>Productos</span>
+              <span>Promos</span>
             </router-link>
-            <router-link to="/productos" class="navbar-item">
+            <router-link to="/ofertas" class="navbar-item">
               <b-icon icon="settings" custom-size="default"/>
               <span>Ofertas</span>
             </router-link>
@@ -38,7 +36,7 @@
               <span>Revisiones</span>
             </router-link>
             <router-link to="/lo-que-mas-sale" class="navbar-item">
-              <b-icon icon="logout" custom-size="default"/>
+              <b-icon icon="pizza" custom-size="default"/>
               <span>Lo que más sale</span>
             </router-link>
           </div>

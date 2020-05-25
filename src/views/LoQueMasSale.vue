@@ -2,7 +2,7 @@
   <div>
     <title-bar :title-stack="titleStack"/>
     <section class="section is-main-section">
-      <card-component title="Ofertas" class="has-table has-mobile-sort-spaced">
+      <card-component title="Lo Que Mas Sale" class="has-table has-mobile-sort-spaced">
         <clients-table-sample :data-url="`${$router.options.base}data-sources/clients.json`"/>
       </card-component>
     </section>
@@ -16,11 +16,10 @@ import TitleBar from '@/components/TitleBar'
 import CardComponent from '@/components/CardComponent'
 import ClientsTableSample from '@/components/ClientsTableSample'
 export default {
-  name: 'ofertas',
+  name: 'loquemassale',
   components: {
     ClientsTableSample,
     CardComponent,
-
     TitleBar
   },
   data () {
@@ -34,7 +33,7 @@ export default {
   computed: {
     titleStack () {
       return [
-        'Ofertas'
+        'Lo Que Mas Sale'
       ]
     }
   },

@@ -2,11 +2,11 @@
   <div class="is-landing">
     <div class="columns is-vcentered has-text-centered">
       <div class="column">
-        <router-link to="/productos" class="button is-white is-outlined is-rounded is-large">
-          <span>Productos</span>
-        </router-link>
-        <router-link to="/ofertas" class="button is-white is-outlined is-rounded is-large">
+        <router-link to="/Ofertas" class="button is-white is-outlined is-rounded is-large">
           <span>Ofertas</span>
+        </router-link>
+        <router-link to="/promos" class="button is-white is-outlined is-rounded is-large">
+          <span>Promos</span>
         </router-link>
       </div>
     </div>

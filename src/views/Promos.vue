@@ -1,11 +1,8 @@
 <template>
   <div>
     <title-bar :title-stack="titleStack"/>
-    <hero-bar :has-right-visible="false">
-      Productos
-    </hero-bar>
     <section class="section is-main-section">
-      <card-component title="Productos" class="has-table has-mobile-sort-spaced">
+      <card-component title="Promos" class="has-table has-mobile-sort-spaced">
         <clients-table-sample :data-url="`${$router.options.base}data-sources/clients.json`"/>
       </card-component>
     </section>
@@ -16,7 +13,6 @@
 // @ is an alias to /src
 import * as chartConfig from '@/components/Charts/chart.config'
 import TitleBar from '@/components/TitleBar'
-import HeroBar from '@/components/HeroBar'
 import CardComponent from '@/components/CardComponent'
 import ClientsTableSample from '@/components/ClientsTableSample'
 export default {
@@ -24,7 +20,6 @@ export default {
   components: {
     ClientsTableSample,
     CardComponent,
-    HeroBar,
     TitleBar
   },
   data () {
@@ -38,8 +33,7 @@ export default {
   computed: {
     titleStack () {
       return [
-        '',
-        'Productos'
+        'Promos'
       ]
     }
   },

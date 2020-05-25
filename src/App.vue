@@ -37,8 +37,8 @@ export default {
             updateMark: true
           },
           {
-            to: '/productos',
-            label: 'Productos',
+            to: '/promos',
+            label: 'Promos',
             icon: 'square-edit-outline'
           }
         ],
