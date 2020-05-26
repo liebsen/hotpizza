@@ -13,7 +13,7 @@
       <div class="level-right">
         <div class="level-item">
           <div class="buttons is-right">
-            <router-link to="/promos" class="button is-primary">
+            <router-link to="/promos" class="button is-white is-medium is-rounded is-outlined">
               <b-icon icon="star" custom-size="default"/>
               <span>Promos</span>
             </router-link>
