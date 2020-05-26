@@ -1,3 +1,8 @@
+.is-background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .is-landing {
   min-height: calc(100vh - 175px);
   background-image: url('../assets/Pizza-Logo-vintage-styles-vector-03.jpg');
@@ -49,6 +54,9 @@
 }
 
 @include desktop {
+  html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+    padding-top: 4.75rem;
+  }
   .is-landing {
     min-height: calc(100vh - 121px);
     background-size: 50%;

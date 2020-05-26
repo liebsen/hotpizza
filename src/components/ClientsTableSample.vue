@@ -29,8 +29,7 @@
           {{ props.row.city }}
         </b-table-column>
         <b-table-column class="is-progress-col" label="Calificación" field="rate" sortable>
-          <rate-component :data-rate="props.row.rate">
-          </rate-component>
+          <rate-component :data-rate="props.row.rate"/>
         </b-table-column>
         <b-table-column label="Precio">
           <small class="has-text-grey is-abbr-like" :title="props.row.created">{{ props.row.price }} ARS</small>
