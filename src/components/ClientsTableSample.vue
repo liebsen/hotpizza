@@ -28,8 +28,9 @@
         <b-table-column label="Ubicación" field="city" sortable>
           {{ props.row.city }}
         </b-table-column>
-        <b-table-column class="is-progress-col" label="Progress" field="progress" sortable>
-          <progress class="progress is-small is-primary" :value="props.row.progress" max="100">{{ props.row.progress }}</progress>
+        <b-table-column class="is-progress-col" label="Calificación" field="rate" sortable>
+          <rate-component :data-rate="props.row.rate">
+          </rate-component>
         </b-table-column>
         <b-table-column label="Precio">
           <small class="has-text-grey is-abbr-like" :title="props.row.created">{{ props.row.price }} ARS</small>
@@ -39,9 +40,9 @@
             <router-link :to="{name:'client.edit', params: {id: props.row.id}}" class="button is-medium is-success is-rounded is-outlined">
               <b-icon icon="cart-arrow-down" size="is-medium"/>
             </router-link>
-            <!--button class="button is-small is-danger" type="button" @click.prevent="trashModal(props.row)">
-              <b-icon icon="trash-can" size="is-small"/>
-            </button-->
+            <button class="button is-medium is-danger is-rounded is-outlined" type="button" @click.prevent="trashModal(props.row)">
+              <b-icon icon="cart-remove" size="is-medium"/>
+            </button>
           </div>
         </b-table-column>
       </template>
@@ -69,10 +70,13 @@
 <script>
 import axios from 'axios'
 import ModalBox from '@/components/ModalBox'
-
+import RateComponent from '@/components/RateComponent'
 export default {
   name: 'ClientsTableSample',
-  components: { ModalBox },
+  components: {
+    ModalBox,
+    RateComponent
+  },
   props: {
     dataUrl: {
       type: String,

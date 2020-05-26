@@ -9,7 +9,7 @@
 		"company": "Kiehn-Green",
 		"city": "Belgrano",
 		"address": "Arcos 3220",
-		"progress": 70,
+		"rate": 3.9,
 		"created": "Mar 3, 2020",
 		"created_mm_dd_yyyy": "03-03-2020"
 	}, {
@@ -22,7 +22,7 @@
 		"company": "Nolan",
 		"city": "Palermo",
 		"address": "Paraguay 2688",
-		"progress": 68,
+		"rate": 3.6,
 		"created": "Dec 1, 2019",
 		"created_mm_dd_yyyy": "12-01-2019"
 	}, {
@@ -35,7 +35,7 @@
 		"price": 699,
 		"city": "Palermo",
 		"address": "Tagle 3900",
-		"progress": 49,
+		"rate": 4.9,
 		"created": "May 18, 2019",
 		"created_mm_dd_yyyy": "05-18-2019"
 	}, {
@@ -47,7 +47,7 @@
 		"city": "Nuñez",
 		"price": 599,
 		"address": "Larralde 3614",
-		"progress": 38,
+		"rate": 3.5,
 		"created": "May 4, 2019",
 		"created_mm_dd_yyyy": "05-04-2019"
 	}]
